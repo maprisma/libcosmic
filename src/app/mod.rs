@@ -155,6 +155,7 @@ pub fn run<App: Application>(settings: Settings, flags: App::Flags) -> iced::Res
         .title(cosmic::Cosmic::title)
         .style(cosmic::Cosmic::style)
         .theme(cosmic::Cosmic::theme)
+        .scale_factor(cosmic::Cosmic::scale_factor)
         .window_size((500.0, 800.0))
         .settings(settings)
         .window(window_settings)
@@ -181,6 +182,7 @@ pub fn run<App: Application>(settings: Settings, flags: App::Flags) -> iced::Res
             .title(cosmic::Cosmic::title)
             .style(cosmic::Cosmic::style)
             .theme(cosmic::Cosmic::theme)
+            .scale_factor(cosmic::Cosmic::scale_factor)
             .settings(settings)
             .run()
     }
